@@ -1,0 +1,148 @@
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Container für Naviagtion Mobil First
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ticketsListe {
+  padding: 1%;
+  border-top: 1px solid black;
+  width: 90%;
+  margin: auto;
+  background-color: #f0f0f5; // #f0f0f5
+}
+
+
+.ticketDetail {
+  padding: 1%;
+
+  &__kurzinfos {
+    padding-bottom: 2%;
+
+    &__bild {
+    }
+
+    &__text {
+
+
+      &__adresse {
+      }
+
+      &__titel {
+        font-size: 30px;
+      }
+
+      &__preis {
+      }
+
+    }
+  }
+
+  &__beschreibung {
+    // margin: 1% 0;
+    background-color: gainsboro;
+
+    &__eventLeiste {
+      padding: 1%;
+
+      &__links {
+      }
+
+      &__rechts {
+      }
+
+    }
+
+    &__text {
+      padding: 1%;
+    }
+
+  }
+
+
+}
+
+
+
+.ticketPreis {
+  margin: 1%;
+  // padding: 1%;
+  background-color: white;
+
+  &__container {
+    padding: 1%;
+
+    &__ticketwahl {
+      padding: auto;
+      background-color: gainsboro;
+
+      &__inputfeld {
+        border: 0px solid;
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      &__text {
+      }
+
+    }
+
+
+    &__preis {
+    }
+
+    &__infos {
+    }
+
+
+  }
+
+
+}
+
+
+.ticketsAusverkauft {
+  opacity: 0.2;
+  // color: red;
+  // font-size: 35px;
+
+}
+
+.ticketsTotal {
+  background-color: dodgerblue;
+  color: white;
+  margin: 1%;
+  padding: 1%;
+
+  &__containerLinks {
+  }
+
+  &__containerRechts {
+  }
+
+}
+
+
+
+.tickets {
+
+  &__button {
+
+    &__inWarenkorb {
+      padding: 1%;
+      margin: 1%;
+      text-align: center;
+      color: blue;
+    }
+
+    &__zumWarenkorbGehen {
+      padding: 1%;
+      margin: 1%;
+      text-align: center;
+      color: blue;
+    }
+
+  }
+
+
+
+}

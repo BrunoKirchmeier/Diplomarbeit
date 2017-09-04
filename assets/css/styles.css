@@ -1,0 +1,790 @@
+@charset "UTF-8";
+/*
+/////////////////     BOOTSTRAP UEBERSCHREIBEN  /////////////////////////////////////////////////////////////////////////////////////////
+// Sass Datei von Bibliothek Slick Slider für CSS
+ */
+.wrapper {
+  font-size: 15px;
+  background-color: #f0f0f5; }
+
+.positionFixed {
+  position: fixed;
+  width: 100%; }
+
+.positionRelative {
+  position: relative;
+  width: 100%; }
+
+/*
+/////////////////     SLICK SLIDER BIBLIOTHEK  /////////////////////////////////////////////////////////////////////////////////////////
+// Sass Datei von Bibliothek Slick Slider für CSS
+ */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/*
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////     HEADER MOBILE FIRST  /////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ */
+.header {
+  background-color: #f0f0f5; }
+
+.menue {
+  width: 100%;
+  position: fixed;
+  z-index: 20; }
+  .menue__iconLine {
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    background-color: #f0f0f5;
+    display: flex; }
+    .menue__iconLine__links {
+      height: 100%;
+      width: 20%;
+      align-self: flex-end; }
+      .menue__iconLine__links__img {
+        height: 90%; }
+    .menue__iconLine__mitte {
+      height: 60%;
+      width: 10%; }
+    .menue__iconLine__rechts {
+      height: 60%;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-self: flex-end;
+      align-items: center; }
+      .menue__iconLine__rechts__img {
+        height: 100%;
+        width: 20%; }
+      .menue__iconLine__rechts__sprache {
+        height: 100%;
+        width: 20%; }
+      .menue__iconLine__rechts__trennbalken {
+        color: blue;
+        font-size: 1em; }
+      .menue__iconLine__rechts__login {
+        height: 100%;
+        width: 20%; }
+      .menue__iconLine__rechts__tickets {
+        height: 100%;
+        display: flex;
+        max-width: 20%; }
+        .menue__iconLine__rechts__tickets__img {
+          width: 100%; }
+      .menue__iconLine__rechts__nav {
+        width: 20%; }
+  .menue__flyout {
+    background: #333;
+    opacity: 0.9;
+    width: 100%;
+    height: 1000px;
+    display: none;
+    padding: 5%; }
+    .menue__flyout ul {
+      list-style-type: none; }
+    .menue__flyout ul li {
+      border-bottom: 1px solid #FFFFFF;
+      list-style-type: none;
+      padding: 15px; }
+    .menue__flyout a {
+      font-size: 2.5em;
+      color: white;
+      text-decoration: none; }
+
+.headerBild {
+  min-height: 200px;
+  background: url("../images/png/titelbild_lineup_mobile_480.png") no-repeat;
+  background-size: cover; }
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 30%;
+  bottom: 8px;
+  color: #f0f0f5;
+  position: relative;
+  z-index: 10; }
+  .countdown__tage__kreis {
+    stroke-width: 5; }
+  .countdown__stunden__kreis {
+    stroke-width: 5; }
+  .countdown__minuten__kreis {
+    stroke-width: 5; }
+  .countdown__sekunden__kreis {
+    stroke-width: 5; }
+
+.kundenLoginMenue {
+  background: #333;
+  opacity: 0.9;
+  width: 100%;
+  height: 1000px;
+  color: white;
+  font-size: 20px;
+  display: none; }
+  .kundenLoginMenue__profil {
+    margin: 2%; }
+    .kundenLoginMenue__profil:hover {
+      background-color: blue; }
+  .kundenLoginMenue__login {
+    margin: 2%; }
+    .kundenLoginMenue__login:hover {
+      background-color: blue; }
+  .kundenLoginMenue__logout {
+    margin: 2%; }
+    .kundenLoginMenue__logout:hover {
+      background-color: blue; }
+  .kundenLoginMenue__userAktiv {
+    color: white;
+    font-size: 20px;
+    text-align: center; }
+
+.kundenLogin {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .kundenLogin h1, .kundenLogin h6 {
+    color: white; }
+  .kundenLogin__form {
+    width: 100%;
+    background-color: #333;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    .kundenLogin__form__username {
+      margin: auto; }
+    .kundenLogin__form__password {
+      margin: auto; }
+    .kundenLogin__form__submit {
+      margin: auto;
+      display: inline-block; }
+    .kundenLogin__form__exit {
+      margin: auto;
+      display: inline-block; }
+    .kundenLogin__form__passwortVergessen {
+      display: inline-block; }
+    .kundenLogin__form__bestaetigungsMail {
+      display: none; }
+
+.kundendaten {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .kundendaten h1, .kundendaten h4, .kundendaten h6 {
+    color: white; }
+  .kundendaten__form {
+    width: 100%;
+    background-color: #333;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    .kundendaten__form__submit {
+      margin: auto;
+      display: none; }
+    .kundendaten__form__newsletter {
+      color: white; }
+    .kundendaten__form__neu {
+      display: none; }
+    .kundendaten__form__speichern {
+      display: none; }
+    .kundendaten__form__exit {
+      margin: auto;
+      display: inline-block; }
+
+/*
+/////////////////     Content mit Inhalten von Bands mit Spieltagen und detailseiten MOBILE FIRST  /////////////////////////////////////////////////////////////////////////////////////////
+//  Content einfügen
+ */
+.contentBandListFilter {
+  text-align: center;
+  font-size: 15px;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around; }
+
+.contentBandListFilterDropdown {
+  background: #333;
+  opacity: 0.9;
+  width: 100%;
+  height: 1000px;
+  display: none;
+  padding: 2% 20%; }
+  .contentBandListFilterDropdown__kat {
+    list-style-type: none;
+    font-size: 22px;
+    color: gainsboro; }
+  .contentBandListFilterDropdown__element {
+    border-bottom: 1px solid #FFFFFF;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 10px;
+    color: white; }
+    .contentBandListFilterDropdown__element:hover {
+      color: red; }
+
+.contentBandListDaten {
+  width: 100%; }
+  .contentBandListDaten__element {
+    width: 100%;
+    padding: 5% 10%;
+    margin: auto; }
+    .contentBandListDaten__element__bild {
+      width: 100%; }
+      .contentBandListDaten__element__bild__01 {
+        width: 100%; }
+    .contentBandListDaten__element__daten {
+      background-color: white;
+      margin: auto;
+      padding: 2% 0%; }
+      .contentBandListDaten__element__daten__titel {
+        font-size: 10px;
+        color: blue;
+        text-align: center; }
+      .contentBandListDaten__element__daten__zeit {
+        font-size: 10px;
+        text-align: center; }
+      .contentBandListDaten__element__daten__datum {
+        font-size: 10px;
+        text-align: center; }
+      .contentBandListDaten__element__daten__tag {
+        font-size: 10px;
+        text-align: center; }
+      .contentBandListDaten__element__daten__trennbalken {
+        font-size: 10px;
+        text-align: center; }
+      .contentBandListDaten__element__daten__ort {
+        font-size: 10px;
+        text-align: center; }
+
+.contentBandDetail {
+  width: 100%; }
+  .contentBandDetail__slider {
+    width: 100%; }
+    .contentBandDetail__slider__bild-01 {
+      width: 100%; }
+      .contentBandDetail__slider__bild-01__img {
+        width: 100%; }
+    .contentBandDetail__slider__bild-02 {
+      width: 100%; }
+      .contentBandDetail__slider__bild-02__img {
+        width: 100%; }
+    .contentBandDetail__slider__bild-03 {
+      width: 100%; }
+      .contentBandDetail__slider__bild-03__img {
+        width: 100%; }
+  .contentBandDetail__titel {
+    font-size: 30px;
+    color: blue;
+    text-align: center; }
+  .contentBandDetail__info {
+    width: 100%;
+    margin: auto;
+    padding: 2% 0%; }
+    .contentBandDetail__info__zeit {
+      font-size: 10px;
+      text-align: center; }
+    .contentBandDetail__info__datum {
+      font-size: 10px;
+      text-align: center; }
+    .contentBandDetail__info__tag {
+      font-size: 10px;
+      text-align: center; }
+    .contentBandDetail__info__trennbalken {
+      font-size: 10px;
+      text-align: center; }
+    .contentBandDetail__info__ort {
+      font-size: 10px;
+      text-align: center; }
+  .contentBandDetail__share {
+    max-width: 100%;
+    margin: 10%; }
+    .contentBandDetail__share__div1 {
+      background-color: #333333; }
+      .contentBandDetail__share__div1__facebook {
+        max-height: 30px; }
+    .contentBandDetail__share__div3 {
+      background-color: #333333; }
+      .contentBandDetail__share__div3__twitter {
+        max-height: 30px; }
+  .contentBandDetail__beschreibung {
+    width: 100%;
+    min-height: 100px;
+    padding: 5%; }
+  .contentBandDetail__link {
+    margin: auto; }
+    .contentBandDetail__link__div1__twitter {
+      background-color: #333333;
+      width: 100%; }
+    .contentBandDetail__link__div2__facebook {
+      background-color: #333333;
+      width: 100%; }
+    .contentBandDetail__link__div3__youtoube {
+      width: 100%;
+      background-color: #333333; }
+    .contentBandDetail__link__div4__instagramm {
+      width: 100%;
+      background-color: #333333; }
+  .contentBandDetail__divButton__back {
+    padding: 2%;
+    margin: 5%;
+    text-align: center;
+    color: blue; }
+
+.adminHeader {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .adminHeader__logo {
+    height: 100%;
+    width: 20%; }
+  .adminHeader__LoginContainer {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .adminHeader__LoginContainer__links {
+      height: 100%;
+      width: 20%; }
+    .adminHeader__LoginContainer__rechts {
+      height: 100%;
+      width: 80%;
+      background-color: #333;
+      color: white;
+      font-size: 20px; }
+  .adminHeader__nav {
+    height: 100%;
+    width: 10%;
+    text-align: center; }
+
+.adminMenue {
+  background: #333;
+  opacity: 0.9;
+  width: 100%;
+  height: 1000px;
+  display: none;
+  padding: 5%; }
+  .adminMenue ul {
+    list-style-type: none; }
+  .adminMenue ul li {
+    border-bottom: 1px solid #FFFFFF;
+    list-style-type: none;
+    padding: 15px; }
+  .adminMenue a {
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none; }
+
+.adminLoginMenue {
+  background: #333;
+  opacity: 0.9;
+  width: 100%;
+  height: 1000px;
+  color: white;
+  font-size: 20px;
+  display: none; }
+  .adminLoginMenue__profil {
+    margin: 2%; }
+    .adminLoginMenue__profil:hover {
+      background-color: blue; }
+  .adminLoginMenue__login {
+    margin: 2%; }
+    .adminLoginMenue__login:hover {
+      background-color: blue; }
+  .adminLoginMenue__logout {
+    margin: 2%; }
+    .adminLoginMenue__logout:hover {
+      background-color: blue; }
+  .adminLoginMenue__newAdmin {
+    margin: 2%; }
+    .adminLoginMenue__newAdmin:hover {
+      background-color: blue; }
+  .adminLoginMenue__userAktiv {
+    color: white;
+    font-size: 20px;
+    text-align: center; }
+
+.adminLogin {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .adminLogin h1, .adminLogin h6 {
+    color: white; }
+  .adminLogin__form {
+    width: 100%;
+    background-color: #333;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    .adminLogin__form__username {
+      margin: auto; }
+    .adminLogin__form__password {
+      margin: auto; }
+    .adminLogin__form__submit {
+      margin: auto;
+      display: inline-block; }
+    .adminLogin__form__exit {
+      margin: auto;
+      display: inline-block; }
+
+.adminProfil {
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .adminProfil h4 {
+    color: white; }
+  .adminProfil__form {
+    width: 100%;
+    background-color: #333;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+    .adminProfil__form__email {
+      margin: auto; }
+    .adminProfil__form__username {
+      margin: auto; }
+    .adminProfil__form__password {
+      margin: auto; }
+    .adminProfil__form__passwordBestaetigen {
+      margin: auto; }
+    .adminProfil__form__telefon {
+      margin: auto;
+      display: block; }
+    .adminProfil__form__level {
+      margin: auto; }
+    .adminProfil__form__speichern {
+      margin: auto;
+      display: inline-block; }
+    .adminProfil__form__exit {
+      margin: auto;
+      display: inline-block; }
+
+.adminBandListErstellen {
+  padding: 1%;
+  background-color: darkgray;
+  width: 100%;
+  display: none; }
+  .adminBandListErstellen__container {
+    width: 100%;
+    margin: 1%; }
+    .adminBandListErstellen__container__links {
+      width: 5%;
+      display: inline-block; }
+    .adminBandListErstellen__container__rechts {
+      display: inline-block; }
+      .adminBandListErstellen__container__rechts__neu {
+        display: inline-block; }
+  .adminBandListErstellen__datum input {
+    width: 20%; }
+  .adminBandListErstellen__zeit input {
+    width: 20%; }
+
+.adminBandList__table {
+  width: 90%;
+  margin: auto; }
+  .adminBandList__table th {
+    font-size: 18px; }
+  .adminBandList__table th td {
+    padding: 15px; }
+  .adminBandList__table__header__detail {
+    width: 20%;
+    text-align: center; }
+    .adminBandList__table__header__detail__button {
+      width: 100%; }
+  .adminBandList__table__header__loeschen {
+    width: 20%;
+    text-align: center; }
+    .adminBandList__table__header__loeschen__button {
+      width: 100%; }
+  .adminBandList__table__zeile__detail {
+    width: 20%;
+    text-align: center; }
+  .adminBandList__table__zeile__loeschen {
+    width: 20%;
+    text-align: center; }
+
+.adminBandDetails {
+  padding: 1%;
+  background-color: darkgray;
+  width: 100%;
+  display: none; }
+  .adminBandDetails__container {
+    width: 100%;
+    margin: 1%; }
+    .adminBandDetails__container__links {
+      width: 5%;
+      display: inline-block; }
+    .adminBandDetails__container__rechts {
+      display: inline-block; }
+      .adminBandDetails__container__rechts__aktuell {
+        display: inline-block; }
+      .adminBandDetails__container__rechts__neu {
+        display: inline-block; }
+  .adminBandDetails__datum input {
+    width: 20%; }
+  .adminBandDetails__zeit input {
+    width: 20%; }
+
+.adminTicketListErstellen {
+  padding: 1%;
+  background-color: darkgray;
+  width: 100%;
+  display: none; }
+  .adminTicketListErstellen__container {
+    width: 100%;
+    margin: 1%; }
+    .adminTicketListErstellen__container__links {
+      width: 5%;
+      display: inline-block; }
+    .adminTicketListErstellen__container__rechts {
+      display: inline-block; }
+      .adminTicketListErstellen__container__rechts__neu {
+        display: inline-block; }
+  .adminTicketListErstellen__datum input {
+    width: 20%; }
+  .adminTicketListErstellen__zeit input {
+    width: 20%; }
+
+.adminTicketList__table {
+  width: 90%;
+  margin: auto; }
+  .adminTicketList__table th {
+    font-size: 18px; }
+  .adminTicketList__table th td {
+    padding: 15px; }
+  .adminTicketList__table__header__detail {
+    width: 20%;
+    text-align: center; }
+    .adminTicketList__table__header__detail__button {
+      width: 100%; }
+  .adminTicketList__table__header__loeschen {
+    width: 20%;
+    text-align: center; }
+    .adminTicketList__table__header__loeschen__button {
+      width: 100%; }
+  .adminTicketList__table__zeile__detail {
+    width: 20%;
+    text-align: center; }
+  .adminTicketList__table__zeile__loeschen {
+    width: 20%;
+    text-align: center; }
+
+.adminTicketDetails {
+  padding: 1%;
+  background-color: darkgray;
+  width: 100%;
+  display: none; }
+  .adminTicketDetails__container {
+    width: 100%;
+    margin: 1%; }
+    .adminTicketDetails__container__links {
+      width: 5%;
+      display: inline-block; }
+    .adminTicketDetails__container__rechts {
+      display: inline-block; }
+      .adminTicketDetails__container__rechts__aktuell {
+        display: inline-block; }
+      .adminTicketDetails__container__rechts__neu {
+        display: inline-block; }
+  .adminTicketDetails__datum input {
+    width: 20%; }
+  .adminTicketDetails__zeit input {
+    width: 20%; }
+
+.ticketsListe {
+  padding: 1%;
+  border-top: 1px solid black;
+  width: 90%;
+  margin: auto;
+  background-color: #f0f0f5; }
+
+.ticketDetail {
+  padding: 1%; }
+  .ticketDetail__kurzinfos {
+    padding-bottom: 2%; }
+    .ticketDetail__kurzinfos__text__titel {
+      font-size: 30px; }
+  .ticketDetail__beschreibung {
+    background-color: gainsboro; }
+    .ticketDetail__beschreibung__eventLeiste {
+      padding: 1%; }
+    .ticketDetail__beschreibung__text {
+      padding: 1%; }
+
+.ticketPreis {
+  margin: 1%;
+  background-color: white; }
+  .ticketPreis__container {
+    padding: 1%; }
+    .ticketPreis__container__ticketwahl {
+      padding: auto;
+      background-color: gainsboro; }
+      .ticketPreis__container__ticketwahl__inputfeld {
+        border: 0px solid;
+        background-color: dodgerblue;
+        color: white; }
+
+.ticketsAusverkauft {
+  opacity: 0.2; }
+
+.ticketsTotal {
+  background-color: dodgerblue;
+  color: white;
+  margin: 1%;
+  padding: 1%; }
+
+.tickets__button__inWarenkorb {
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  color: blue; }
+
+.tickets__button__zumWarenkorbGehen {
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  color: blue; }
+
+.warenkorb__bestelluebersicht {
+  width: 90%;
+  margin: auto; }
+  .warenkorb__bestelluebersicht__border {
+    background-color: white;
+    padding: 1%; }
+    .warenkorb__bestelluebersicht__border__container {
+      border-bottom: 1px solid grey; }
+      .warenkorb__bestelluebersicht__border__container__links__titel {
+        font-size: 25px; }
+      .warenkorb__bestelluebersicht__border__container__rechts {
+        color: blue; }
+      .warenkorb__bestelluebersicht__border__container__leisteTotal {
+        background-color: blue;
+        color: white;
+        font-size: 25px; }
+
+.gekaufteTickets__button__zurueckGehen {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: grey;
+  color: white; }
+
+.gekaufteTickets__button__weitereTicketKaufen {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: grey;
+  color: white; }
+
+.gekaufteTickets__ticketsAktuell__header {
+  background-color: grey;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px; }
+
+.gekaufteTickets__ticketsAktuell__element {
+  background-color: #f0f0f5;
+  color: black;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px; }
+  .gekaufteTickets__ticketsAktuell__element__links__bild {
+    max-height: 150px; }
+
+.gekaufteTickets__ticketVerlauf__jahr {
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px; }
+
+.gekaufteTickets__ticketVerlauf__header {
+  background-color: grey;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px; }
+
+.gekaufteTickets__ticketVerlauf__element {
+  background-color: #f0f0f5;
+  color: black;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px; }
+  .gekaufteTickets__ticketVerlauf__element__links__bild {
+    max-height: 150px; }

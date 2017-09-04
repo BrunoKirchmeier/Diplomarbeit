@@ -1,0 +1,61 @@
+/*
+/////////////////     BOOTSTRAP UEBERSCHREIBEN  /////////////////////////////////////////////////////////////////////////////////////////
+// Sass Datei von Bibliothek Slick Slider für CSS
+ */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Grundwraper für gesamten Inhalt - Klasse von Bootstrap Framework kommt ebenfalls noch hinzu
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.wrapper {
+  font-size: 15px;
+  background-color: #f0f0f5; // #f0f0f5
+  // width: 400px;
+}
+
+
+.positionFixed {
+  position: fixed;
+  width: 100%;
+}
+
+
+.positionRelative {
+  position: relative;
+  width: 100%;
+}
+
+
+
+/*
+/////////////////     SLICK SLIDER BIBLIOTHEK  /////////////////////////////////////////////////////////////////////////////////////////
+// Sass Datei von Bibliothek Slick Slider für CSS
+ */
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+
+
+/////////////////     MODULE PHP SEITEN  /////////////////////////////////////////////////////////////////////////////////////////
+
+@import "components/header.scss";
+
+@import "components/bandList";
+
+@import "components/footer.scss";
+
+@import "components/footer.scss";
+
+@import "components/admin.scss";
+
+@import "components/adminBand.scss";
+
+@import "components/adminTicket.scss";
+
+@import "components/tickets.scss";
+
+@import "components/warenkorb.scss";
+
+@import "components/gekaufteTickets.scss";
+

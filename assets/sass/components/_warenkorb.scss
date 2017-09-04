@@ -1,0 +1,62 @@
+
+
+.warenkorb__bestelluebersicht {
+  width: 90%;
+  margin: auto;
+
+  &__border {
+    background-color: white;
+    padding: 1%;
+
+    &__container {
+      border-bottom: 1px solid grey;
+
+      &__links {
+
+
+        &__adresse {
+        }
+
+        &__titel {
+          font-size: 25px;
+        }
+
+        &__preis {
+        }
+
+
+      }
+
+
+      &__rechts {
+        color: blue;
+
+        &__anzTickets {
+        }
+
+        &__preis {
+        }
+
+        &__infos {
+        }
+
+      }
+
+      &__leisteTotal {
+        background-color: blue;
+        color: white;
+        font-size: 25px;
+
+        &__links {
+        }
+
+        &__rechts {
+        }
+
+      }
+
+    }
+
+  }
+
+}
